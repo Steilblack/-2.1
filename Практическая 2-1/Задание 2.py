@@ -1,12 +1,3 @@
-#Задание 1
-j = input("Введите драгоцености: ")
-s = input("Введите камни: ")
-count = 0
-for i in s:
-    if i in j:
-        count += 1
-print(count)
-#Задание 2
 def data(candidates, target):
     resultat = []
     candidates.sort()
@@ -27,14 +18,4 @@ def data(candidates, target):
 candidates = [10,1,2,7,6,1,5]
 target = 8
 result = data(candidates, target)
-print(result)
-#Задание 3
-def array(nums):
-    nums.sort()
-    for i in range(len(nums) - 1):
-        if nums[i] == nums[i + 1]:
-            return True
-    return False
-nums = [1,2,3,1]
-result = array(nums)
 print(result)
